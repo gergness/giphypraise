@@ -1,0 +1,17 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# giphypraise
+giphypraise is an R package that combines the [praise package](https://github.com/rladies/praise) with the [giphy api](https://github.com/Giphy/GiphyAPI). It parses a string to add positive words using the praise package, then searches giphy for a gif using one of those words.
+
+```{r}
+library(giphypraise)
+
+# See the Giphy API Github page for more information on keys (https://github.com/Giphy/GiphyAPI)
+set_giphy_api_key(readLines("giphy_api_key.txt"))
+
+praise_with_giphy("You are a ${adjective} person, keep up the ${adjective} work!")
+```

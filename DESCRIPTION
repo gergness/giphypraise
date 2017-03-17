@@ -1,0 +1,18 @@
+Package: giphypraise
+Type: Package
+Title: Praise users with gifs
+Version: 0.1.0
+Authors@R: person("Greg", "Freedman Ellis", email = "greg.freedman@gmail.com", role = c("aut", "cre"))
+Description: giphypraise is an R package that combines the praise package with the giphy api. 
+    It parses a string to add positive words using the praise package, 
+    then searches giphy for a gif using one of those words.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: htmltools,
+    httr, 
+    knitr, 
+    magrittr,
+    praise
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
